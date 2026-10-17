@@ -1,0 +1,455 @@
+{
+  "common": {
+    "Header": {
+      "logo": "/logo/logo.png",
+      "white_logo": "/logo/white-logo.svg",
+      "logo_text": "SOLTRIX",
+      "logo_subtext": "RENEWABLE ENERGY SOLUTIONS",
+      "links": [
+        {
+          "name": "Home",
+          "href": "/"
+        },
+        {
+          "name": "About",
+          "href": "/about"
+        },
+        {
+          "name": "Services",
+          "href": "/services"
+        },
+        {
+          "name": "Projects",
+          "href": "/projects"
+        },
+        {
+          "name": "Blog",
+          "href": "/blog"
+        },
+        {
+          "name": "Contact",
+          "href": "/contact"
+        }
+      ],
+      "button_text": "Get a Quote",
+      "button_link": "/contact"
+    },
+    "Footer": {
+      "logo": "/logo/logo-w.png",
+      "background": "/img/footer-bg.jpg",
+      "logo_text": "SOLTRIX",
+      "logo_subtext": "SOLAR ENERGY SOLUTIONS",
+      "description": "Clean energy solutions\nfor a brighter tomorrow.",
+      "headings": {
+        "quick_links": "Quick Links",
+        "our_services": "Our Services",
+        "contact": "Contact Information"
+      },
+      "quick_links": [
+        {
+          "name": "HOME",
+          "href": "/"
+        },
+        {
+          "name": "ABOUT US",
+          "href": "/about"
+        },
+        {
+          "name": "SERVICES",
+          "href": "/services"
+        },
+        {
+          "name": "BLOGS",
+          "href": "/blog"
+        },
+        {
+          "name": "CONTACT US",
+          "href": "/contact"
+        }
+      ],
+      "our_services": [
+        {
+          "name": "Residential Solar",
+          "href": "/services"
+        },
+        {
+          "name": "Commercial Systems",
+          "href": "/services"
+        },
+        {
+          "name": "Industrial Solutions",
+          "href": "/services"
+        },
+        {
+          "name": "Maintenance & Repair",
+          "href": "/services"
+        }
+      ],
+      "contact": {
+        "address": "123 Solar Boulevard, Green City, CA 90210",
+        "email": "info@soltrix.com",
+        "phone": "+91 98765 43210",
+        "hours": "Mon - Fri: 8:00 AM - 6:00 PM"
+      },
+      "copyright": "© 2024 SOLTRIX. ALL RIGHTS RESERVED.",
+      "socials": [
+        {
+          "name": "Facebook",
+          "href": "https://facebook.com"
+        },
+        {
+          "name": "Instagram",
+          "href": "https://instagram.com"
+        },
+        {
+          "name": "Linkedin",
+          "href": "https://linkedin.com"
+        },
+        {
+          "name": "Youtube",
+          "href": "https://youtube.com"
+        }
+      ]
+    }
+  },
+  "categories": {
+    "SolarEnergy": {
+      "templateComponents": {
+        "template-1": {
+          "pages": {
+            "home": {
+              "title": "Home",
+              "pageName": "Home",
+              "metadata": {
+                "title": "SOLTRIX - Renewable Energy Solutions",
+                "description": "Reliable solar solutions for homes and businesses. Powering a cleaner, greener tomorrow."
+              },
+              "components": [
+                {
+                  "key": "HeroSection",
+                  "component": "Hero"
+                },
+                {
+                  "key": "AboutSection",
+                  "component": "About"
+                },
+                {
+                  "key": "ServicesSection",
+                  "component": "Services"
+                },
+                {
+                  "key": "TestimonialsSection",
+                  "component": "Testimonials"
+                },
+                {
+                  "key": "BlogsSection",
+                  "component": "Blogs"
+                }
+              ]
+            },
+            "about": {
+              "title": "About Us",
+              "pageName": "About Us",
+              "metadata": {
+                "title": "About Us | SOLTRIX Renewable Energy",
+                "description": "Delivering clean, dependable solar power systems tailored for a sustainable world."
+              },
+              "breadcrumb": {
+                "title": "About Us",
+                "items": [
+                  {
+                    "name": "Home",
+                    "href": "/"
+                  },
+                  {
+                    "name": "About Us",
+                    "href": "/about"
+                  }
+                ]
+              },
+              "components": [
+                {
+                  "key": "BreadcrumbSection",
+                  "component": "Breadcrumb"
+                },
+                {
+                  "key": "AboutSection",
+                  "component": "About"
+                },
+                {
+                  "key": "ServicesSection",
+                  "component": "Services"
+                },
+                {
+                  "key": "TestimonialsSection",
+                  "component": "Testimonials"
+                }
+              ]
+            },
+            "services": {
+              "title": "Our Services",
+              "pageName": "Our Services",
+              "metadata": {
+                "title": "Solar Services & Solutions | SOLTRIX",
+                "description": "Comprehensive residential, commercial, and industrial solar engineering solutions."
+              },
+              "breadcrumb": {
+                "title": "Our Services",
+                "items": [
+                  {
+                    "name": "Home",
+                    "href": "/"
+                  },
+                  {
+                    "name": "Our Services",
+                    "href": "/services"
+                  }
+                ]
+              },
+              "components": [
+                {
+                  "key": "BreadcrumbSection",
+                  "component": "Breadcrumb"
+                },
+                {
+                  "key": "ServicesSection",
+                  "component": "Services"
+                },
+                {
+                  "key": "TestimonialsSection",
+                  "component": "Testimonials"
+                }
+              ]
+            },
+            "blog": {
+              "title": "Our Insights & Blog",
+              "pageName": "Blog",
+              "metadata": {
+                "title": "Solar Insights & Articles | SOLTRIX",
+                "description": "Continuous tips and insights for clean energy adoption, ROI calculations, and sustainable living."
+              },
+              "breadcrumb": {
+                "title": "Insights & Blog",
+                "items": [
+                  {
+                    "name": "Home",
+                    "href": "/"
+                  },
+                  {
+                    "name": "Blog",
+                    "href": "/blog"
+                  }
+                ]
+              },
+              "components": [
+                {
+                  "key": "BreadcrumbSection",
+                  "component": "Breadcrumb"
+                },
+                {
+                  "key": "BlogsSection",
+                  "component": "Blogs"
+                }
+              ]
+            },
+            "contact": {
+              "title": "Contact Us",
+              "pageName": "Contact Us",
+              "metadata": {
+                "title": "Contact SOLTRIX | Get a Solar Quote",
+                "description": "Get in touch with our solar engineering specialists for consultations and estimates."
+              },
+              "breadcrumb": {
+                "title": "Contact Us",
+                "items": [
+                  {
+                    "name": "Home",
+                    "href": "/"
+                  },
+                  {
+                    "name": "Contact Us",
+                    "href": "/contact"
+                  }
+                ]
+              },
+              "components": [
+                {
+                  "key": "BreadcrumbSection",
+                  "component": "Breadcrumb"
+                },
+                {
+                  "key": "ContactSection",
+                  "component": "Contact"
+                }
+              ]
+            }
+          },
+          "sections": {
+            "hero": {
+              "eyebrow": "CLEAN ENERGY FOR A BRIGHTER TOMORROW",
+              "title_line1": "RENEWABLE",
+              "title_line2": "ENERGY SOLUTIONS",
+              "description": "Reliable solar solutions for a cleaner and greener future.",
+              "primary_button": {
+                "text": "CONTACT US",
+                "href": "/contact"
+              },
+              "image_leaves": "/img/b2.webp",
+              "image_solar": "/img/b1.webp"
+            },
+            "about": {
+              "eyebrow": "ABOUT US",
+              "title_line1": "CLEAN ENERGY",
+              "title_line2": "FOR A BRIGHTER",
+              "title_highlight": "TOMORROW",
+              "description": "We deliver reliable solar solutions for a cleaner and greener future.",
+              "image": "/img/about.webp",
+              "features": [
+                {
+                  "icon": "Sun",
+                  "label": "Renewable Energy"
+                },
+                {
+                  "icon": "Leaf",
+                  "label": "Sustainable Solutions"
+                },
+                {
+                  "icon": "Users",
+                  "label": "Expert Team"
+                },
+                {
+                  "icon": "ShieldCheck",
+                  "label": "Trusted Partner"
+                }
+              ]
+            },
+            "services": {
+              "eyebrow": "OUR SERVICES",
+              "title_line1": "SUSTAINABLE",
+              "title_highlight": "SOLAR SOLUTIONS",
+              "description": "From homes to industries, we provide end-to-end solar solutions designed to reduce energy costs and build a cleaner, greener future.",
+              "items": [
+                {
+                  "id": "01",
+                  "title": "Residential Solar Solutions",
+                  "description": "Reliable solar systems for homes to lower electricity bills and embrace clean energy.",
+                  "image": "/services/1.webp",
+                  "button_text": "LEARN MORE",
+                  "href": "/services",
+                  "accent_color": "#f3efe9"
+                },
+                {
+                  "id": "02",
+                  "title": "Commercial Solar Solutions",
+                  "description": "Customized solar power systems for businesses to improve efficiency and reduce operational costs.",
+                  "image": "/services/2.webp",
+                  "button_text": "LEARN MORE",
+                  "href": "/services",
+                  "accent_color": "#e8efe8"
+                },
+                {
+                  "id": "03",
+                  "title": "Industrial Solar Solutions",
+                  "description": "High-performance solar systems for heavy industries to cut energy dependencies and long-term savings.",
+                  "image": "/services/3.webp",
+                  "button_text": "LEARN MORE",
+                  "href": "/services",
+                  "accent_color": "#eaf0f5"
+                },
+                {
+                  "id": "04",
+                  "title": "Operations & Maintenance",
+                  "description": "Comprehensive support and maintenance to keep your solar systems running at peak performance.",
+                  "image": "/services/4.webp",
+                  "button_text": "LEARN MORE",
+                  "href": "/services",
+                  "accent_color": "#f2eee9"
+                }
+              ]
+            },
+            "testimonials": {
+              "eyebrow": "TESTIMONIALS",
+              "title_line1": "TRUSTED",
+              "title_highlight": "BY CLIENTS",
+              "description": "Read stories from homeowners and business leaders who switched to solar energy with us.",
+              "items": [
+                {
+                  "name": "Alice Jenkins",
+                  "role": "Homeowner",
+                  "avatar": "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?q=80&w=400&auto=format&fit=crop",
+                  "quote": "The team provided an exceptional service from consultation through installation. Highly recommended.",
+                  "rating": 5
+                },
+                {
+                  "name": "David Miller",
+                  "role": "Business Owner",
+                  "avatar": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=400&auto=format&fit=crop",
+                  "quote": "Switching to solar was seamless. Our energy bills have dropped significantly every month.",
+                  "rating": 5
+                },
+                {
+                  "name": "Sarah Taylor",
+                  "role": "Facility Director",
+                  "avatar": "https://images.unsplash.com/photo-1580489944761-15a19d654956?q=80&w=400&auto=format&fit=crop",
+                  "quote": "Outstanding service and quality. The return on investment is visible right away.",
+                  "rating": 5
+                }
+              ]
+            },
+            "blogs": {
+              "eyebrow": "BLOG",
+              "title_line1": "INSIGHTS",
+              "title_line2": "FOR A",
+              "title_line3": "GREENER",
+              "title_highlight": "TOMORROW",
+              "description": "Learn continuous tips and insights for clean energy adoption, ROI calculations, and sustainable living.",
+              "button": {
+                "text": "VIEW ALL POSTS",
+                "href": "/blog"
+              },
+              "items": [
+                {
+                  "slug": "top-5-benefits-of-switching-to-solar-power-in-2026",
+                  "title": "Top 5 Benefits of Switching to Solar Power in 2026",
+                  "category": "Solar Energy",
+                  "date": "October 12, 2026",
+                  "image": "https://images.unsplash.com/photo-1497435334941-8c899ee9e8e9?q=80&w=800&auto=format&fit=crop",
+                  "excerpt": "Discover how solar energy can help lower utility bills while protecting the planet for future generations.",
+                  "author": "Antigravity Team"
+                },
+                {
+                  "slug": "residential-vs-commercial-solar-whats-the-difference",
+                  "title": "Residential vs Commercial Solar: What's the Difference?",
+                  "category": "Residential",
+                  "date": "September 28, 2026",
+                  "image": "https://images.unsplash.com/photo-1513694203232-719a280e022f?q=80&w=800&auto=format&fit=crop",
+                  "excerpt": "Understanding key differences between residential and commercial rooftop solar installations.",
+                  "author": "Antigravity Team"
+                },
+                {
+                  "slug": "how-clean-energy-accelerates-our-net-zero-goals",
+                  "title": "How Clean Energy Accelerates Our Net-Zero Goals",
+                  "category": "Sustainability",
+                  "date": "September 15, 2026",
+                  "image": "https://images.unsplash.com/photo-1518531933037-91b2f5f229cc?q=80&w=800&auto=format&fit=crop",
+                  "excerpt": "Explore the crucial role renewable solar power plays in carbon emission reduction.",
+                  "author": "Antigravity Team"
+                }
+              ]
+            },
+            "contact": {
+              "subtitle": "GET IN TOUCH",
+              "title_line1": "Request A Free",
+              "title_highlight": "Solar Consultation",
+              "description": "Speak with our energy experts to assess your property, evaluate incentives, and calculate your return on investment.",
+              "address": "123 Solar Boulevard, Green City, CA 90210",
+              "phone": "+1 (800) 456-7890",
+              "email": "info@soltrixpower.com",
+              "hours": "Monday - Friday: 8:00 AM - 6:00 PM"
+            }
+          }
+        }
+      }
+    }
+  }
+}
