@@ -2,7 +2,6 @@ import Header from '../../components/sections/Header';
 import Footer from '../../components/sections/Footer';
 import Breadcrumb from '../../components/sections/Breadcrumb';
 import Services from '../../components/sections/Services';
-import Testimonials from '../../components/sections/Testimonials';
 import BackToTop from '../../components/ui/BackToTop';
 import { common, pages, sections } from '../../components/types';
 
@@ -18,7 +17,6 @@ export default function ServicesPage() {
       <main className="w-full flex-1">
         <Breadcrumb data={pages.services.breadcrumb!} />
         <Services data={sections.services} />
-        <Testimonials data={sections.testimonials} />
       </main>
       <Footer data={common.Footer} />
       <BackToTop />

@@ -50,9 +50,9 @@ function SocialIcon({ name }: { name: string }) {
 }
 
 export default function Footer({ data }: { data: FooterData }) {
-  // Use /logo/logo-w.png as requested by user
-  const logoSrc = data.logo || '/logo/logo-w.png';
-  const bgSrc = data.background || '/img/footer-bg.jpg';
+  // Use /logo/logo-w.webp as requested by user
+  const logoSrc = data.logo || '/logo/logo-w.webp';
+  const bgSrc = data.background || '/img/footer-bg.webp';
 
   return (
     <footer className="relative overflow-hidden bg-[#0d1315] text-white">
@@ -170,8 +170,8 @@ export default function Footer({ data }: { data: FooterData }) {
 
         {/* Bottom Bar: Horizontal Divider & Left-aligned Copyright */}
         <div className="mt-8 sm:mt-10 border-t border-white/10 pt-4 sm:pt-5">
-          <p className="text-[12px] sm:text-[13px] font-medium uppercase tracking-[0.14em] text-[#94a3b8]">
-            {data.copyright || '© 2024 SOLTRIX. ALL RIGHTS RESERVED.'}
+          <p className="text-[12px] sm:text-[13px] font-normal tracking-wide text-[#94a3b8]">
+            {data.copyright || 'Copyright © 2026. All rights reserved. Powered by Lestow'}
           </p>
         </div>
       </div>

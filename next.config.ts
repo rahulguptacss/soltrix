@@ -18,6 +18,22 @@ const nextConfig: NextConfig = {
       },
     },
   },
+  async rewrites() {
+    return [
+      {
+        source: '/:path*.png',
+        destination: '/:path*.webp',
+      },
+      {
+        source: '/:path*.jpg',
+        destination: '/:path*.webp',
+      },
+      {
+        source: '/:path*.jpeg',
+        destination: '/:path*.webp',
+      },
+    ];
+  },
 };
 
 export default nextConfig;

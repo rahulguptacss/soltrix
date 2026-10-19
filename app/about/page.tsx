@@ -2,8 +2,7 @@ import Header from '../../components/sections/Header';
 import Footer from '../../components/sections/Footer';
 import Breadcrumb from '../../components/sections/Breadcrumb';
 import About from '../../components/sections/About';
-import Services from '../../components/sections/Services';
-import Testimonials from '../../components/sections/Testimonials';
+import Stats from '../../components/sections/Stats';
 import BackToTop from '../../components/ui/BackToTop';
 import { common, pages, sections } from '../../components/types';
 
@@ -19,8 +18,7 @@ export default function AboutPage() {
       <main className="w-full flex-1">
         <Breadcrumb data={pages.about.breadcrumb!} />
         <About data={sections.about} />
-        <Services data={sections.services} />
-        <Testimonials data={sections.testimonials} />
+        <Stats data={sections.about} />
       </main>
       <Footer data={common.Footer} />
       <BackToTop />

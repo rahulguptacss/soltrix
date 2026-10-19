@@ -274,25 +274,25 @@ export default function About({ data }: { data: AboutSectionData }) {
     <section
       ref={sectionRef}
       id="about"
-      className="relative overflow-hidden bg-white pt-0 sm:pt-2 lg:pt-4 pb-4 sm:pb-6 lg:pb-8"
+      className="relative overflow-hidden bg-white pt-2 sm:pt-4 lg:pt-6 pb-6 sm:pb-8 lg:pb-12"
     >
       <div className="w-full pr-0">
-        <div className="grid grid-cols-1 items-center gap-10 lg:grid-cols-[1.2fr_1fr] xl:grid-cols-[1.25fr_0.95fr] lg:gap-8 xl:gap-12">
+        <div className="grid grid-cols-1 items-center gap-8 sm:gap-10 lg:grid-cols-[1.2fr_1fr] xl:grid-cols-[1.25fr_0.95fr] lg:gap-8 xl:gap-12">
           {/* Left Column: Eyebrow, Main Heading, Description, 2x2 Features Grid */}
           <div
             ref={leftColRef}
-            className="flex flex-col items-start pl-6 sm:pl-10 md:pl-14 lg:pl-16 xl:pl-24 2xl:pl-32 pr-4 sm:pr-6 lg:pr-8 xl:pr-10"
+            className="flex flex-col items-start px-5 sm:px-8 md:px-12 lg:pl-16 lg:pr-6 xl:pl-24 xl:pr-10 2xl:pl-32 max-w-[720px] lg:max-w-none"
           >
             {/* Eyebrow: Yellow Dash + Tagline */}
             {data.eyebrow && (
-              <div className="mb-3.5 flex items-center gap-2.5">
+              <div className="mb-3 sm:mb-3.5 flex items-center gap-2.5">
                 <span
                   ref={yellowBarRef}
-                  className="h-[2.5px] w-7 shrink-0 bg-[#fab526] will-change-transform"
+                  className="h-[2.5px] w-6 sm:w-7 shrink-0 bg-[#fab526] will-change-transform"
                 />
                 <p
                   ref={eyebrowTextRef}
-                  className="text-[12px] sm:text-[13px] font-semibold uppercase tracking-[0.16em] text-[#64748b] will-change-transform"
+                  className="text-[11.5px] sm:text-[13px] font-semibold uppercase tracking-[0.16em] text-[#64748b] will-change-transform"
                 >
                   {data.eyebrow}
                 </p>
@@ -303,13 +303,13 @@ export default function About({ data }: { data: AboutSectionData }) {
                 Line 1: CLEAN ENERGY (Heavy)
                 Line 2: FOR A BRIGHTER (Heavy)
                 Line 3: TOMORROW (Light) */}
-            <div className="mb-5 uppercase tracking-tight text-[#081d16]">
+            <div className="mb-4 sm:mb-5 uppercase tracking-tight text-[#081d16] w-full">
               <h2 className="uppercase text-[#081d16]">
                 {/* Line 1 */}
                 <span className="block overflow-hidden py-0.5">
                   <span
                     ref={titleLine1Ref}
-                    className="block text-[38px] sm:text-[48px] lg:text-[56px] xl:text-[64px] font-black leading-[0.98] tracking-[-0.03em] sm:whitespace-nowrap will-change-transform"
+                    className="block text-[32px] xs:text-[36px] sm:text-[44px] md:text-[50px] lg:text-[56px] xl:text-[64px] font-black leading-[1.04] sm:leading-[0.98] tracking-[-0.025em] sm:tracking-[-0.03em] will-change-transform lg:whitespace-nowrap"
                   >
                     {data.title_line1}
                   </span>
@@ -320,7 +320,7 @@ export default function About({ data }: { data: AboutSectionData }) {
                   <span className="block overflow-hidden py-0.5 mt-0.5 sm:mt-1">
                     <span
                       ref={titleLine2Ref}
-                      className="block text-[38px] sm:text-[48px] lg:text-[56px] xl:text-[64px] font-black leading-[0.98] tracking-[-0.03em] sm:whitespace-nowrap will-change-transform"
+                      className="block text-[32px] xs:text-[36px] sm:text-[44px] md:text-[50px] lg:text-[56px] xl:text-[64px] font-black leading-[1.04] sm:leading-[0.98] tracking-[-0.025em] sm:tracking-[-0.03em] will-change-transform lg:whitespace-nowrap"
                     >
                       {data.title_line2}
                     </span>
@@ -332,7 +332,7 @@ export default function About({ data }: { data: AboutSectionData }) {
                   <span className="block overflow-hidden py-0.5 mt-0.5 sm:mt-1">
                     <span
                       ref={titleLine3Ref}
-                      className="block text-[38px] sm:text-[48px] lg:text-[56px] xl:text-[64px] font-light leading-[0.98] tracking-[-0.02em] text-[#081d16] sm:whitespace-nowrap will-change-transform"
+                      className="block text-[32px] xs:text-[36px] sm:text-[44px] md:text-[50px] lg:text-[56px] xl:text-[64px] font-light leading-[1.04] sm:leading-[0.98] tracking-[-0.02em] text-[#081d16] will-change-transform lg:whitespace-nowrap"
                     >
                       {data.title_highlight}
                     </span>
@@ -344,7 +344,7 @@ export default function About({ data }: { data: AboutSectionData }) {
             {/* Description Subtitle */}
             <p
               ref={descRef}
-              className="text-[17px] sm:text-[19px] lg:text-[20px] leading-relaxed text-[#64748b] max-w-[500px] will-change-transform"
+              className="text-[15px] sm:text-[17px] md:text-[18px] lg:text-[19px] xl:text-[20px] leading-relaxed text-[#64748b] max-w-[520px] will-change-transform"
             >
               {data.description}
             </p>
@@ -352,32 +352,27 @@ export default function About({ data }: { data: AboutSectionData }) {
             {/* 2x2 Feature Items Grid with Yellow Accents */}
             <div
               ref={featuresGridRef}
-              className="mt-6 sm:mt-7 lg:mt-8 grid grid-cols-2 gap-x-12 sm:gap-x-16 lg:gap-x-20 xl:gap-x-24 gap-y-10 sm:gap-y-12 lg:gap-y-14 w-full max-w-[580px]"
+              className="mt-7 sm:mt-9 grid grid-cols-2 gap-x-6 sm:gap-x-10 md:gap-x-14 lg:gap-x-16 xl:gap-x-20 gap-y-7 sm:gap-y-9 lg:gap-y-12 w-full max-w-[580px]"
             >
               {data.features.map((feature) => {
                 const Icon = iconMap[feature.icon] || Sun;
-                const words = feature.label.split(' ');
 
                 return (
                   <div
                     key={feature.label}
-                    className="group flex flex-col items-start will-change-transform"
+                    className="group flex flex-col items-start min-w-0 will-change-transform"
                   >
                     {/* Circular Icon Container */}
-                    <div className="flex h-[68px] w-[68px] sm:h-[76px] sm:w-[76px] lg:h-[82px] lg:w-[82px] items-center justify-center rounded-full bg-[#f4f5f7] text-[#081d16] transition-all duration-300 group-hover:scale-105 group-hover:bg-[#081d16] group-hover:text-white group-hover:shadow-md">
-                      <Icon className="h-8 w-8 sm:h-9 sm:w-9 stroke-[2]" />
+                    <div className="flex h-13 w-13 sm:h-14 sm:w-14 lg:h-16 lg:w-16 shrink-0 items-center justify-center rounded-full bg-[#f4f7f5] text-[#081d16] border border-gray-100/90 shadow-[0_2px_8px_rgba(0,0,0,0.02)] transition-all duration-300 group-hover:scale-105 group-hover:bg-[#081d16] group-hover:text-white">
+                      <Icon className="h-6 w-6 sm:h-6.5 sm:w-6.5 lg:h-7 lg:w-7 stroke-[1.8]" />
                     </div>
 
-                    {/* Short Yellow Accent Line */}
-                    <span className="mt-4 h-[3px] w-8 sm:w-10 shrink-0 bg-[#fab526] transition-all duration-300 group-hover:w-12" />
+                    {/* Short Orange Accent Line on all items */}
+                    <span className="mt-3 mb-1.5 h-[2.5px] w-7 sm:w-8 shrink-0 rounded-full bg-[#f5a623] transition-all duration-300 group-hover:w-10" />
 
-                    {/* 2-Line Label */}
-                    <span className="mt-3 text-[18px] sm:text-[20px] lg:text-[22px] font-bold leading-[1.22] text-[#081d16]">
-                      {words.map((word, wIdx) => (
-                        <span key={wIdx} className="block">
-                          {word}
-                        </span>
-                      ))}
+                    {/* Feature Label without awkward word-splitting */}
+                    <span className="text-[15px] sm:text-[16px] lg:text-[18px] font-bold leading-snug text-[#081d16] break-words">
+                      {feature.label}
                     </span>
                   </div>
                 );
@@ -385,17 +380,17 @@ export default function About({ data }: { data: AboutSectionData }) {
             </div>
           </div>
 
-          {/* Right Column: Tall Sunset Solar Rooftop Photo (Sharp Corners & Flush to Right) */}
-          <div className="w-full">
+          {/* Right Column: Tall Sunset Solar Rooftop Photo */}
+          <div className="w-full px-4 sm:px-6 md:px-10 lg:px-0">
             <div
               ref={imgCardRef}
-              className="relative w-full overflow-hidden rounded-none bg-gray-50 shadow-sm ring-1 ring-black/5 will-change-transform"
+              className="relative w-full overflow-hidden rounded-xl sm:rounded-2xl lg:rounded-none bg-gray-50 shadow-sm ring-1 ring-black/5 will-change-transform"
             >
               <img
                 ref={imgRef}
                 src={data.image || '/img/about.webp'}
                 alt={data.title_line1}
-                className="w-full h-[520px] sm:h-[660px] lg:h-[760px] xl:h-[840px] object-cover object-right transition-transform duration-700 will-change-transform"
+                className="w-full h-[280px] xs:h-[320px] sm:h-[420px] md:h-[500px] lg:h-[720px] xl:h-[800px] object-cover object-center lg:object-right transition-transform duration-700 will-change-transform"
               />
             </div>
           </div>

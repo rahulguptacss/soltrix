@@ -1,8 +1,8 @@
 {
   "common": {
     "Header": {
-      "logo": "/logo/logo.png",
-      "white_logo": "/logo/white-logo.svg",
+      "logo": "/logo/logo.webp",
+      "white_logo": "/logo/white-logo.webp",
       "logo_text": "SOLTRIX",
       "logo_subtext": "RENEWABLE ENERGY SOLUTIONS",
       "links": [
@@ -23,20 +23,24 @@
           "href": "/projects"
         },
         {
-          "name": "Blog",
+          "name": "Testimonials",
+          "href": "/testimonials"
+        },
+        {
+          "name": "Blogs",
           "href": "/blog"
         },
         {
-          "name": "Contact",
+          "name": "Contact Us",
           "href": "/contact"
         }
       ],
       "button_text": "Get a Quote",
-      "button_link": "/contact"
+      "button_link": "/get-a-quote"
     },
     "Footer": {
-      "logo": "/logo/logo-w.png",
-      "background": "/img/footer-bg.jpg",
+      "logo": "/logo/logo-w.webp",
+      "background": "/img/footer-bg.webp",
       "logo_text": "SOLTRIX",
       "logo_subtext": "SOLAR ENERGY SOLUTIONS",
       "description": "Clean energy solutions\nfor a brighter tomorrow.",
@@ -70,28 +74,28 @@
       "our_services": [
         {
           "name": "Residential Solar",
-          "href": "/services"
+          "href": "/services/residential-solar-solutions"
         },
         {
           "name": "Commercial Systems",
-          "href": "/services"
+          "href": "/services/commercial-solar-solutions"
         },
         {
           "name": "Industrial Solutions",
-          "href": "/services"
+          "href": "/services/industrial-solar-solutions"
         },
         {
           "name": "Maintenance & Repair",
-          "href": "/services"
+          "href": "/services/operations-maintenance"
         }
       ],
       "contact": {
-        "address": "123 Solar Boulevard, Green City, CA 90210",
-        "email": "info@soltrix.com",
-        "phone": "+91 98765 43210",
+        "address": "123 Education Lane, New York, NY 10001",
+        "email": "info@xyz.com",
+        "phone": "+100000000000",
         "hours": "Mon - Fri: 8:00 AM - 6:00 PM"
       },
-      "copyright": "© 2024 SOLTRIX. ALL RIGHTS RESERVED.",
+      "copyright": "Copyright © 2026. All rights reserved. Powered by Lestow",
       "socials": [
         {
           "name": "Facebook",
@@ -177,12 +181,8 @@
                   "component": "About"
                 },
                 {
-                  "key": "ServicesSection",
-                  "component": "Services"
-                },
-                {
-                  "key": "TestimonialsSection",
-                  "component": "Testimonials"
+                  "key": "StatsSection",
+                  "component": "Stats"
                 }
               ]
             },
@@ -222,24 +222,15 @@
               ]
             },
             "blog": {
-              "title": "Our Insights & Blog",
-              "pageName": "Blog",
+              "title": "Blogs",
+              "pageName": "Blogs",
               "metadata": {
-                "title": "Solar Insights & Articles | SOLTRIX",
-                "description": "Continuous tips and insights for clean energy adoption, ROI calculations, and sustainable living."
+                "title": "Blogs | SOLTRIX Solar Energy Solutions",
+                "description": "Stay informed with expert insights, tips and updates on solar energy, sustainability and a cleaner tomorrow."
               },
               "breadcrumb": {
-                "title": "Insights & Blog",
-                "items": [
-                  {
-                    "name": "Home",
-                    "href": "/"
-                  },
-                  {
-                    "name": "Blog",
-                    "href": "/blog"
-                  }
-                ]
+                "title": "Blogs",
+                "items": []
               },
               "components": [
                 {
@@ -282,6 +273,125 @@
                   "component": "Contact"
                 }
               ]
+            },
+            "serviceDetail": {
+              "title": "Services Details",
+              "pageName": "Services Details",
+              "metadata": {
+                "title": "Residential Solar Solutions | SOLTRIX",
+                "description": "Efficient and reliable solar solutions designed for modern homes. Switch to clean energy, reduce your electricity bills and create a more sustainable future."
+              },
+              "breadcrumb": {
+                "title": "Services Details",
+                "items": [
+                  {
+                    "name": "Home",
+                    "href": "/"
+                  },
+                  {
+                    "name": "Services Details",
+                    "href": "/service-detail"
+                  }
+                ]
+              },
+              "components": [
+                {
+                  "key": "BreadcrumbSection",
+                  "component": "Breadcrumb"
+                },
+                {
+                  "key": "ServiceDetailSection",
+                  "component": "ServiceDetail"
+                }
+              ]
+            },
+            "testimonials": {
+              "title": "Testimonials",
+              "pageName": "Testimonials",
+              "metadata": {
+                "title": "Testimonials | SOLTRIX Renewable Energy",
+                "description": "Hear from our happy customers who have made the switch to clean and renewable energy with Soltrix."
+              },
+              "breadcrumb": {
+                "title": "Testimonials",
+                "items": []
+              },
+              "components": [
+                {
+                  "key": "BreadcrumbSection",
+                  "component": "Breadcrumb"
+                },
+                {
+                  "key": "TestimonialsSection",
+                  "component": "Testimonials"
+                }
+              ]
+            },
+            "projects": {
+              "title": "Projects",
+              "pageName": "Projects",
+              "metadata": {
+                "title": "Selected Solar Projects | SOLTRIX Renewable Energy",
+                "description": "Explore a few of our completed solar projects that are creating cleaner energy and brighter communities."
+              },
+              "breadcrumb": {
+                "title": "Projects",
+                "items": []
+              },
+              "components": [
+                {
+                  "key": "BreadcrumbSection",
+                  "component": "Breadcrumb"
+                },
+                {
+                  "key": "ProjectsSection",
+                  "component": "Projects"
+                }
+              ]
+            },
+            "getAQuote": {
+              "title": "Get a Quote",
+              "pageName": "Get a Quote",
+              "metadata": {
+                "title": "Get a Quote | SOLTRIX Solar Energy Solutions",
+                "description": "Provide your basic information and our team will contact you with a personalized solar quote."
+              },
+              "breadcrumb": {
+                "title": "Get a Quote",
+                "items": []
+              },
+              "components": [
+                {
+                  "key": "BreadcrumbSection",
+                  "component": "Breadcrumb"
+                },
+                {
+                  "key": "QuoteSection",
+                  "component": "GetAQuote"
+                }
+              ]
+            },
+            "blogDetail": {
+              "title": "Blog Detail",
+              "pageName": "Blog Detail",
+              "metadata": {
+                "title": "5 Key Benefits of Installing Solar Panels at Home | SOLTRIX",
+                "description": "Discover how solar energy can reduce your electricity bills, increase property value and contribute to a cleaner environment for a brighter future."
+              },
+              "breadcrumb": {
+                "title": "Blog Detail",
+                "items": []
+              },
+              "components": [
+                {
+                  "key": "BreadcrumbSection",
+                  "component": "Breadcrumb"
+                },
+                {
+                  "key": "BlogDetailSection",
+                  "component": "BlogDetail"
+                }
+              ]
             }
           },
           "sections": {
@@ -321,6 +431,21 @@
                   "icon": "ShieldCheck",
                   "label": "Trusted Partner"
                 }
+              ],
+              "stats_image": "/img/solar-field.webp",
+              "stats": [
+                {
+                  "value": "10+",
+                  "label": "Years of Experience"
+                },
+                {
+                  "value": "250+",
+                  "label": "Projects Completed"
+                },
+                {
+                  "value": "100%",
+                  "label": "Commitment to Clean Energy"
+                }
               ]
             },
             "services": {
@@ -335,7 +460,7 @@
                   "description": "Reliable solar systems for homes to lower electricity bills and embrace clean energy.",
                   "image": "/services/1.webp",
                   "button_text": "LEARN MORE",
-                  "href": "/services",
+                  "href": "/services/residential-solar-solutions",
                   "accent_color": "#f3efe9"
                 },
                 {
@@ -344,7 +469,7 @@
                   "description": "Customized solar power systems for businesses to improve efficiency and reduce operational costs.",
                   "image": "/services/2.webp",
                   "button_text": "LEARN MORE",
-                  "href": "/services",
+                  "href": "/services/commercial-solar-solutions",
                   "accent_color": "#e8efe8"
                 },
                 {
@@ -353,7 +478,7 @@
                   "description": "High-performance solar systems for heavy industries to cut energy dependencies and long-term savings.",
                   "image": "/services/3.webp",
                   "button_text": "LEARN MORE",
-                  "href": "/services",
+                  "href": "/services/industrial-solar-solutions",
                   "accent_color": "#eaf0f5"
                 },
                 {
@@ -362,78 +487,166 @@
                   "description": "Comprehensive support and maintenance to keep your solar systems running at peak performance.",
                   "image": "/services/4.webp",
                   "button_text": "LEARN MORE",
-                  "href": "/services",
+                  "href": "/services/operations-maintenance",
                   "accent_color": "#f2eee9"
+                }
+              ]
+            },
+            "projects": {
+              "eyebrow": "OUR PROJECTS",
+              "title_line1": "SELECTED",
+              "title_line2": "PROJECTS",
+              "description": "Explore a few of our completed solar projects that are creating cleaner energy and brighter communities.",
+              "items": [
+                {
+                  "id": "01",
+                  "title": "Greenfield Residence",
+                  "category": "Rooftop Solar Installation",
+                  "image": "/projects/greenfield.webp",
+                  "column": "left",
+                  "layout": "wide"
+                },
+                {
+                  "id": "02",
+                  "title": "Sunrise Industrial Park",
+                  "category": "Commercial Solar Solution",
+                  "image": "/projects/sunrise.webp",
+                  "column": "right",
+                  "layout": "wide"
+                },
+                {
+                  "id": "03",
+                  "title": "Lakeview Villas",
+                  "category": "Solar Carport System",
+                  "image": "/projects/lakeview.webp",
+                  "column": "left",
+                  "layout": "compact"
+                },
+                {
+                  "id": "04",
+                  "title": "Orion Manufacturing",
+                  "category": "Industrial Solar System",
+                  "image": "/projects/orion.webp",
+                  "column": "right",
+                  "layout": "tall"
+                },
+                {
+                  "id": "05",
+                  "title": "Maplewood Homes",
+                  "category": "Residential Solar Project",
+                  "image": "/projects/maplewood.webp",
+                  "column": "left",
+                  "layout": "wide"
+                },
+                {
+                  "id": "06",
+                  "title": "Riverside Solar Farm",
+                  "category": "Utility-Scale Solar Project",
+                  "image": "/projects/riverside.webp",
+                  "column": "right",
+                  "layout": "wide"
+                },
+                {
+                  "id": "07",
+                  "title": "Apex Energy Storage Center",
+                  "category": "Commercial Solar & Storage Facility",
+                  "image": "/projects/apex.webp",
+                  "column": "left",
+                  "layout": "wide"
                 }
               ]
             },
             "testimonials": {
               "eyebrow": "TESTIMONIALS",
-              "title_line1": "TRUSTED",
-              "title_highlight": "BY CLIENTS",
-              "description": "Read stories from homeowners and business leaders who switched to solar energy with us.",
+              "title_line1": "What Our",
+              "title_highlight": "Customers",
+              "title_line2": "Say",
+              "description": "Hear from our happy customers who have made the switch to clean and renewable energy with Soltrix.",
               "items": [
                 {
-                  "name": "Alice Jenkins",
-                  "role": "Homeowner",
-                  "avatar": "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?q=80&w=400&auto=format&fit=crop",
-                  "quote": "The team provided an exceptional service from consultation through installation. Highly recommended.",
+                  "name": "Rohit Sharma",
+                  "role": "New Delhi",
+                  "avatar": "/testimonials/priya.webp",
+                  "quote": "Soltrix made the entire process so easy. From consultation to installation, everything was handled professionally. Our electricity bills have reduced significantly and we are very happy with the results.",
                   "rating": 5
                 },
                 {
-                  "name": "David Miller",
-                  "role": "Business Owner",
-                  "avatar": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=400&auto=format&fit=crop",
-                  "quote": "Switching to solar was seamless. Our energy bills have dropped significantly every month.",
+                  "name": "Priya Mehta",
+                  "role": "Gurugram",
+                  "avatar": "/testimonials/rahul.webp",
+                  "quote": "The team at Soltrix was knowledgeable and supportive throughout. The installation was smooth and on time. Now we enjoy clean energy and lower power costs every month.",
                   "rating": 5
                 },
                 {
-                  "name": "Sarah Taylor",
-                  "role": "Facility Director",
-                  "avatar": "https://images.unsplash.com/photo-1580489944761-15a19d654956?q=80&w=400&auto=format&fit=crop",
-                  "quote": "Outstanding service and quality. The return on investment is visible right away.",
+                  "name": "Karan Malhotra",
+                  "role": "Noida",
+                  "avatar": "/testimonials/vikram.webp",
+                  "quote": "Excellent service and genuine guidance. They understood our requirements and suggested the best solution for our home. The system is working perfectly and we can already see the savings.",
+                  "rating": 5
+                },
+                {
+                  "name": "Anjali Verma",
+                  "role": "Faridabad",
+                  "avatar": "/testimonials/neha.webp",
+                  "quote": "Choosing Soltrix was the right decision. Their team was professional, the installation was hassle-free and the performance has been great. Highly recommended!",
                   "rating": 5
                 }
               ]
             },
             "blogs": {
-              "eyebrow": "BLOG",
+              "eyebrow": "BLOGS",
               "title_line1": "INSIGHTS",
               "title_line2": "FOR A",
               "title_line3": "GREENER",
               "title_highlight": "TOMORROW",
-              "description": "Learn continuous tips and insights for clean energy adoption, ROI calculations, and sustainable living.",
+              "page_title_line1": "Latest",
+              "page_title_highlight": "Insights",
+              "page_description": "Stay informed with expert insights, tips and updates on solar energy, sustainability and a cleaner tomorrow.",
+              "description": "Latest updates, tips and insights on clean energy, solar technology and sustainable living.",
               "button": {
-                "text": "VIEW ALL POSTS",
+                "text": "VIEW ALL BLOGS",
                 "href": "/blog"
               },
               "items": [
                 {
-                  "slug": "top-5-benefits-of-switching-to-solar-power-in-2026",
-                  "title": "Top 5 Benefits of Switching to Solar Power in 2026",
+                  "id": "01",
+                  "slug": "5-key-benefits-of-installing-solar-panels-at-home",
+                  "title": "5 Key Benefits of Installing Solar Panels at Home",
                   "category": "Solar Energy",
-                  "date": "October 12, 2026",
-                  "image": "https://images.unsplash.com/photo-1497435334941-8c899ee9e8e9?q=80&w=800&auto=format&fit=crop",
-                  "excerpt": "Discover how solar energy can help lower utility bills while protecting the planet for future generations.",
-                  "author": "Antigravity Team"
+                  "date": "AUG 28, 2024",
+                  "image": "/blogs/blog1.webp",
+                  "excerpt": "Discover how solar energy can reduce your electricity bills, increase property value and contribute to a cleaner environment for a brighter future.",
+                  "button_text": "READ MORE"
                 },
                 {
-                  "slug": "residential-vs-commercial-solar-whats-the-difference",
-                  "title": "Residential vs Commercial Solar: What's the Difference?",
-                  "category": "Residential",
-                  "date": "September 28, 2026",
-                  "image": "https://images.unsplash.com/photo-1513694203232-719a280e022f?q=80&w=800&auto=format&fit=crop",
-                  "excerpt": "Understanding key differences between residential and commercial rooftop solar installations.",
-                  "author": "Antigravity Team"
-                },
-                {
-                  "slug": "how-clean-energy-accelerates-our-net-zero-goals",
-                  "title": "How Clean Energy Accelerates Our Net-Zero Goals",
+                  "id": "02",
+                  "slug": "how-solar-energy-helps-build-a-sustainable-future",
+                  "title": "How Solar Energy Helps Build a Sustainable Future",
                   "category": "Sustainability",
-                  "date": "September 15, 2026",
-                  "image": "https://images.unsplash.com/photo-1518531933037-91b2f5f229cc?q=80&w=800&auto=format&fit=crop",
-                  "excerpt": "Explore the crucial role renewable solar power plays in carbon emission reduction.",
-                  "author": "Antigravity Team"
+                  "date": "AUG 15, 2024",
+                  "image": "/blogs/blog2.webp",
+                  "excerpt": "Learn how renewable energy solutions like solar power can reduce carbon emissions and create a healthier, more sustainable planet for generations to come.",
+                  "button_text": "READ MORE"
+                },
+                {
+                  "id": "03",
+                  "slug": "tips-to-maintain-your-solar-system-for-longer-life",
+                  "title": "Tips to Maintain Your Solar System for Longer Life",
+                  "category": "Maintenance",
+                  "date": "AUG 08, 2024",
+                  "image": "/blogs/b2.webp",
+                  "excerpt": "Simple maintenance tips to keep your solar panels working efficiently for years. Learn how regular cleaning and inspections maximize energy production.",
+                  "button_text": "READ MORE"
+                },
+                {
+                  "id": "04",
+                  "slug": "residential-vs-commercial-solar-what-is-the-difference",
+                  "title": "Residential vs Commercial Solar: What's the Difference?",
+                  "category": "Comparison",
+                  "date": "JUL 28, 2024",
+                  "image": "/blogs/b3.webp",
+                  "excerpt": "A comprehensive guide explaining the key differences in size, installation complexity, costs, and returns between home and business solar setups.",
+                  "button_text": "READ MORE"
                 }
               ]
             },
@@ -442,11 +655,506 @@
               "title_line1": "Request A Free",
               "title_highlight": "Solar Consultation",
               "description": "Speak with our energy experts to assess your property, evaluate incentives, and calculate your return on investment.",
-              "address": "123 Solar Boulevard, Green City, CA 90210",
-              "phone": "+1 (800) 456-7890",
-              "email": "info@soltrixpower.com",
+              "address": "123 Education Lane, New York, NY 10001",
+              "phone": "+100000000000",
+              "email": "info@xyz.com",
               "hours": "Monday - Friday: 8:00 AM - 6:00 PM"
-            }
+            },
+            "service_detail": {
+              "slug": "residential-solar-solutions",
+              "title": "Residential Solar Solutions",
+              "breadcrumb_title": "Services Details",
+              "hero": {
+                "tag": "SERVICES",
+                "title_line1": "RESIDENTIAL",
+                "title_line2": "SOLAR SOLUTIONS",
+                "description": "Efficient and reliable solar solutions designed for modern homes. Switch to clean energy, reduce your electricity bills and create a more sustainable future for your family.",
+                "button_text": "GET A QUOTE",
+                "button_link": "/contact",
+                "image": "/services/residential-hero.webp"
+              },
+              "overview": {
+                "tag": "OVERVIEW",
+                "title_part1": "Clean Energy",
+                "title_for": "for a",
+                "title_highlight": "Better Tomorrow",
+                "paragraphs": [
+                  "Our residential solar solutions help you generate your own clean energy, reduce dependence on traditional power sources and lower your monthly electricity bills.",
+                  "We design and install customized solar systems based on your home's energy needs, roof space and long-term goals. From high-quality solar panels to professional installation and support, we make your transition to solar simple and hassle-free."
+                ],
+                "features": [
+                  {
+                    "number": "01",
+                    "title": "Customized Design",
+                    "description": "Solutions tailored to your home's energy usage and space."
+                  },
+                  {
+                    "number": "02",
+                    "title": "Reliable Installation",
+                    "description": "Professional and safe installation by experienced technicians."
+                  },
+                  {
+                    "number": "03",
+                    "title": "Long-Term Support",
+                    "description": "Ongoing assistance to ensure optimal performance."
+                  }
+                ]
+              },
+              "process": {
+                "tag": "OUR PROCESS",
+                "title_line1": "How It Works",
+                "title_part1": "Simple Steps",
+                "title_highlight": "to Solar",
+                "description": "We follow a clear and easy process to make your solar journey smooth from start to finish.",
+                "image": "/services/residential-process.webp",
+                "steps": [
+                  {
+                    "step": "01",
+                    "title": "Consultation",
+                    "description": "We understand your energy needs and assess your property."
+                  },
+                  {
+                    "step": "02",
+                    "title": "Design & Installation",
+                    "description": "We design the right system and install it with care."
+                  },
+                  {
+                    "step": "03",
+                    "title": "Power Your Home",
+                    "description": "Start generating clean energy and enjoy long-term savings."
+                  }
+                ]
+              },
+              "benefits": {
+                "tag": "BENEFITS",
+                "title_part1": "A Smarter Choice",
+                "title_for": "for",
+                "title_highlight": "Your Home",
+                "lead": "Switching to solar is a smart and future-ready investment that benefits you and the environment.",
+                "items": [
+                  "Reduce your monthly electricity bills",
+                  "Use clean and renewable energy",
+                  "Increase the value of your property",
+                  "Contribute to a greener and healthier planet"
+                ]
+              }
+            },
+            "quote": {
+              "form": {
+                "bg_color": "#f5f7f5",
+                "eyebrow": "REQUEST A QUOTE",
+                "title_prefix": "Fill in Your ",
+                "title_highlight": "Details",
+                "description": "Provide your basic information and our team will contact you with a personalized quote.",
+                "fields": {
+                  "fullName": {
+                    "name": "fullName",
+                    "label": "Full Name *",
+                    "placeholder": "Your Name",
+                    "type": "text",
+                    "required": true
+                  },
+                  "phone": {
+                    "name": "phone",
+                    "label": "Phone Number *",
+                    "placeholder": "Your Phone Number",
+                    "type": "tel",
+                    "required": true
+                  },
+                  "email": {
+                    "name": "email",
+                    "label": "Email Address *",
+                    "placeholder": "Your Email Address",
+                    "type": "email",
+                    "required": true
+                  },
+                  "propertyType": {
+                    "name": "propertyType",
+                    "label": "Property Type *",
+                    "placeholder": "Select Property Type",
+                    "type": "select",
+                    "options": [
+                      "Residential",
+                      "Commercial",
+                      "Industrial",
+                      "Agricultural",
+                      "Other"
+                    ],
+                    "required": true
+                  },
+                  "city": {
+                    "name": "city",
+                    "label": "City *",
+                    "placeholder": "Your City",
+                    "type": "text",
+                    "required": true
+                  },
+                  "requirements": {
+                    "name": "requirements",
+                    "label": "Your Requirements",
+                    "placeholder": "Tell us about your requirements...",
+                    "type": "textarea",
+                    "required": false
+                  }
+                },
+                "submit_button": {
+                  "text": "SUBMIT REQUEST"
+                },
+                "success_message": "Thank you! Your quote request has been submitted successfully. Our team will contact you shortly."
+              },
+              "info": {
+                "image": "/img/quote-solar.webp",
+                "eyebrow": "WHY CHOOSE US",
+                "title_line1": "Reliable Solar Solutions",
+                "title_prefix2": "for a",
+                "title_highlight": "Brighter Tomorrow",
+                "description": "We provide customized solar solutions designed for your home, ensuring maximum efficiency, long-term savings and a cleaner environment.",
+                "features": [
+                  {
+                    "title": "Personalized Consultation",
+                    "description": "We understand your energy needs and suggest the right solution."
+                  },
+                  {
+                    "title": "Expert Guidance",
+                    "description": "Get professional advice from our experienced team."
+                  },
+                  {
+                    "title": "Hassle-Free Process",
+                    "description": "From consultation to installation, we take care of everything."
+                  }
+                ]
+              }
+            },
+            "blog_details": [
+              {
+                "slug": "5-key-benefits-of-installing-solar-panels-at-home",
+                "title": "5 Key Benefits of Installing Solar Panels at Home",
+                "title_line1": "5 Key Benefits of Installing",
+                "title_highlight": "Solar Panels",
+                "title_line2": "at Home",
+                "breadcrumb_title": "Blog Detail",
+                "tag": "BLOG",
+                "date": "AUG 28, 2024",
+                "image": "/blogs/blog1.webp",
+                "intro": "Solar energy is becoming one of the most popular choices for homeowners, and for good reason. It offers a clean, reliable and cost-effective way to power your home while contributing to a greener planet. If you're considering making the switch, here are the key benefits of installing solar panels at home.",
+                "benefits": [
+                  {
+                    "title": "Lower Electricity Bills",
+                    "description": "One of the biggest advantages of solar panels is the significant reduction in your monthly electricity bills. By generating your own power, you rely less on the grid and can save money in the long run."
+                  },
+                  {
+                    "title": "Clean and Renewable Energy",
+                    "description": "Solar energy is a clean, renewable source of power. It helps reduce greenhouse gas emissions and decreases your carbon footprint, making it a responsible choice for a healthier environment."
+                  },
+                  {
+                    "title": "Increase Property Value",
+                    "description": "Homes with solar panels are often more attractive to buyers. A solar system can increase your property value and make your home stand out in the real estate market."
+                  },
+                  {
+                    "title": "Energy Independence",
+                    "description": "With solar panels, you become less dependent on traditional energy sources. This gives you greater control over your energy usage and protection against rising electricity prices."
+                  },
+                  {
+                    "title": "Long-Term Savings",
+                    "description": "While the initial investment may seem significant, solar panels offer long-term financial benefits. With low maintenance and a long lifespan, you can enjoy clean and affordable energy for many years."
+                  }
+                ],
+                "conclusion": {
+                  "tag": "CONCLUSION",
+                  "title_line1": "A Brighter and",
+                  "title_highlight": "Greener Future",
+                  "description": "Installing solar panels at home is not just a smart financial decision, but also a step towards a cleaner and more sustainable future. With lower electricity bills, increased property value and positive environmental impact, solar energy is a win for you and the planet.",
+                  "image": "/blogs/conclusion-solar.webp"
+                },
+                "sidebar": {
+                  "recent_title": "RECENT BLOGS",
+                  "recent_blogs": [
+                    {
+                      "id": "01",
+                      "slug": "5-key-benefits-of-installing-solar-panels-at-home",
+                      "title": "5 Key Benefits of Installing Solar Panels at Home",
+                      "date": "AUG 28, 2024",
+                      "image": "/blogs/blog1.webp"
+                    },
+                    {
+                      "id": "02",
+                      "slug": "how-solar-energy-helps-build-a-sustainable-future",
+                      "title": "How Solar Energy Helps Build a Sustainable Future",
+                      "date": "AUG 15, 2024",
+                      "image": "/blogs/blog2.webp"
+                    },
+                    {
+                      "id": "03",
+                      "slug": "tips-to-maintain-your-solar-system-for-longer-life",
+                      "title": "Tips to Maintain Your Solar System for Longer Life",
+                      "date": "AUG 08, 2024",
+                      "image": "/blogs/b2.webp"
+                    },
+                    {
+                      "id": "04",
+                      "slug": "residential-vs-commercial-solar-what-is-the-difference",
+                      "title": "Residential vs Commercial Solar: What's the Difference?",
+                      "date": "JUL 28, 2024",
+                      "image": "/blogs/b3.webp"
+                    }
+                  ],
+                  "cta": {
+                    "tag": "HAVE QUESTIONS?",
+                    "title_line1": "Get in Touch",
+                    "title_highlight": "with Our Experts",
+                    "description": "We're here to help you find the right solar solution for your home.",
+                    "button_text": "CONTACT US",
+                    "button_link": "/contact"
+                  }
+                }
+              },
+              {
+                "slug": "how-solar-energy-helps-build-a-sustainable-future",
+                "title": "How Solar Energy Helps Build a Sustainable Future",
+                "title_line1": "How Solar Energy Helps",
+                "title_highlight": "Build a Sustainable",
+                "title_line2": "Future",
+                "breadcrumb_title": "Blog Detail",
+                "tag": "SUSTAINABILITY",
+                "date": "AUG 15, 2024",
+                "image": "/blogs/blog2.webp",
+                "intro": "Renewable energy adoption has accelerated worldwide, offering a resilient pathway toward environmental decarbonization and long-term energy security. Photovoltaic solar systems stand as the driving force of this global ecological transformation.",
+                "benefits": [
+                  {
+                    "title": "Zero Tailpipe Emissions & Clean Air",
+                    "description": "Solar systems generate electricity without emitting any carbon dioxide, nitrogen oxides, or harmful particulate smog, directly improving ambient air quality in residential neighborhoods."
+                  },
+                  {
+                    "title": "Freshwater Conservation",
+                    "description": "Unlike coal-fired and nuclear thermoelectric stations that consume millions of gallons of water daily for steam turbines and cooling towers, solar PV generation operates with near zero water withdrawal."
+                  },
+                  {
+                    "title": "Decentralized Grid Architecture",
+                    "description": "Rooftop and distributed solar micro-grids relieve heavy strain on central transmission infrastructure, preventing blackouts during extreme summer heatwaves and winter storms."
+                  },
+                  {
+                    "title": "Circular Manufacturing Economics",
+                    "description": "Next-generation solar panels utilize high-purity aluminum frames, recyclable tempered glass, and reclaimable silicon, fostering an eco-responsible circular lifecycle."
+                  },
+                  {
+                    "title": "Climate Resilience for Communities",
+                    "description": "Solar combined with battery storage empowers local communities with autonomous backup power during emergency weather events and utility grid outages."
+                  }
+                ],
+                "conclusion": {
+                  "tag": "CONCLUSION",
+                  "title_line1": "Empowering A",
+                  "title_highlight": "Carbon-Neutral World",
+                  "description": "Transitioning to clean solar power is a fundamental commitment to protecting biodiversity and securing a stable, renewable energy future for upcoming generations.",
+                  "image": "/blogs/conclusion-solar.webp"
+                },
+                "sidebar": {
+                  "recent_title": "RECENT BLOGS",
+                  "recent_blogs": [
+                    {
+                      "id": "01",
+                      "slug": "5-key-benefits-of-installing-solar-panels-at-home",
+                      "title": "5 Key Benefits of Installing Solar Panels at Home",
+                      "date": "AUG 28, 2024",
+                      "image": "/blogs/blog1.webp"
+                    },
+                    {
+                      "id": "02",
+                      "slug": "how-solar-energy-helps-build-a-sustainable-future",
+                      "title": "How Solar Energy Helps Build a Sustainable Future",
+                      "date": "AUG 15, 2024",
+                      "image": "/blogs/blog2.webp"
+                    },
+                    {
+                      "id": "03",
+                      "slug": "tips-to-maintain-your-solar-system-for-longer-life",
+                      "title": "Tips to Maintain Your Solar System for Longer Life",
+                      "date": "AUG 08, 2024",
+                      "image": "/blogs/b2.webp"
+                    },
+                    {
+                      "id": "04",
+                      "slug": "residential-vs-commercial-solar-what-is-the-difference",
+                      "title": "Residential vs Commercial Solar: What's the Difference?",
+                      "date": "JUL 28, 2024",
+                      "image": "/blogs/b3.webp"
+                    }
+                  ],
+                  "cta": {
+                    "tag": "HAVE QUESTIONS?",
+                    "title_line1": "Get in Touch",
+                    "title_highlight": "with Our Experts",
+                    "description": "We're here to help you find the right solar solution for your home.",
+                    "button_text": "CONTACT US",
+                    "button_link": "/contact"
+                  }
+                }
+              },
+              {
+                "slug": "tips-to-maintain-your-solar-system-for-longer-life",
+                "title": "Tips to Maintain Your Solar System for Longer Life",
+                "title_line1": "Essential Tips to Maintain Your",
+                "title_highlight": "Solar Energy System",
+                "title_line2": "for Longer Life",
+                "breadcrumb_title": "Blog Detail",
+                "tag": "MAINTENANCE",
+                "date": "AUG 08, 2024",
+                "image": "/blogs/b2.webp",
+                "intro": "While photovoltaic solar panels are engineered to endure heavy storms, hail, and high temperatures with a 25-plus year lifespan, practicing routine preventative care ensures your system continuously delivers peak kilowatt-hour generation.",
+                "benefits": [
+                  {
+                    "title": "Keep Panel Glass Free from Dust & Debris",
+                    "description": "Pollen, dust, bird droppings, and fallen leaves can block solar irradiance and reduce output by 15% to 25%. A periodic wash with clean water and a soft sponge restores optimal absorption."
+                  },
+                  {
+                    "title": "Monitor Inverter LED Status & App Logs",
+                    "description": "Check your inverter dashboard and mobile telemetry app regularly. Fluctuations in daily AC conversion efficiency can quickly reveal ground faults or string disconnects before they worsen."
+                  },
+                  {
+                    "title": "Prune Overhanging Tree Branches",
+                    "description": "Surrounding foliage can grow rapidly during spring and cast shadows across your panels. Trimming nearby limbs eliminates shading hotspots that can cause premature cell degradation."
+                  },
+                  {
+                    "title": "Schedule Annual Professional Inspections",
+                    "description": "Certified solar technicians inspect roof mountings, grounding wires, conduit seals, and junction boxes to ensure your system remains structurally secure and compliant with electrical codes."
+                  },
+                  {
+                    "title": "Inspect Battery Storage Temperature & Cycles",
+                    "description": "Ensure your battery backup unit is situated in a well-ventilated, temperature-controlled environment. Avoiding extreme heat and deep discharges preserves battery cycle capacity for decades."
+                  }
+                ],
+                "conclusion": {
+                  "tag": "CONCLUSION",
+                  "title_line1": "Preserve Your",
+                  "title_highlight": "Solar Investment",
+                  "description": "With simple proactive upkeep and periodic checkups, your solar installation will reliably deliver clean electricity and maximum bill savings for over 25 years.",
+                  "image": "/blogs/conclusion-solar.webp"
+                },
+                "sidebar": {
+                  "recent_title": "RECENT BLOGS",
+                  "recent_blogs": [
+                    {
+                      "id": "01",
+                      "slug": "5-key-benefits-of-installing-solar-panels-at-home",
+                      "title": "5 Key Benefits of Installing Solar Panels at Home",
+                      "date": "AUG 28, 2024",
+                      "image": "/blogs/blog1.webp"
+                    },
+                    {
+                      "id": "02",
+                      "slug": "how-solar-energy-helps-build-a-sustainable-future",
+                      "title": "How Solar Energy Helps Build a Sustainable Future",
+                      "date": "AUG 15, 2024",
+                      "image": "/blogs/blog2.webp"
+                    },
+                    {
+                      "id": "03",
+                      "slug": "tips-to-maintain-your-solar-system-for-longer-life",
+                      "title": "Tips to Maintain Your Solar System for Longer Life",
+                      "date": "AUG 08, 2024",
+                      "image": "/blogs/b2.webp"
+                    },
+                    {
+                      "id": "04",
+                      "slug": "residential-vs-commercial-solar-what-is-the-difference",
+                      "title": "Residential vs Commercial Solar: What's the Difference?",
+                      "date": "JUL 28, 2024",
+                      "image": "/blogs/b3.webp"
+                    }
+                  ],
+                  "cta": {
+                    "tag": "HAVE QUESTIONS?",
+                    "title_line1": "Get in Touch",
+                    "title_highlight": "with Our Experts",
+                    "description": "We're here to help you find the right solar solution for your home.",
+                    "button_text": "CONTACT US",
+                    "button_link": "/contact"
+                  }
+                }
+              },
+              {
+                "slug": "residential-vs-commercial-solar-what-is-the-difference",
+                "title": "Residential vs Commercial Solar: What's the Difference?",
+                "title_line1": "Residential vs Commercial Solar:",
+                "title_highlight": "Key Differences",
+                "title_line2": "Explained",
+                "breadcrumb_title": "Blog Detail",
+                "tag": "COMPARISON",
+                "date": "JUL 28, 2024",
+                "image": "/blogs/b3.webp",
+                "intro": "Both residential and commercial solar systems capture sunlight to produce clean power, but their installation size, engineering requirements, panel ratings, and return-on-investment models vary substantially.",
+                "benefits": [
+                  {
+                    "title": "System Size & Daily Power Capacity",
+                    "description": "Residential setups typically range from 6 kW to 15 kW to satisfy family appliances, whereas commercial installations scale from 50 kW to multiple megawatts to power manufacturing plants and offices."
+                  },
+                  {
+                    "title": "Panel Size & Cell Configuration",
+                    "description": "Homes use smaller 60-cell modules (approx. 5.5 ft x 3.3 ft) for easy handling on sloped roofs. Commercial projects deploy larger 72-cell or 144-half-cell modules designed for high flat-roof energy yield."
+                  },
+                  {
+                    "title": "Mounting Systems & Structural Engineering",
+                    "description": "Residential panels are mounted with roof penetrations on pitched shingles or tiles. Commercial roofs typically utilize non-penetrating ballasted racking systems weighted with concrete blocks."
+                  },
+                  {
+                    "title": "Single-Phase vs Three-Phase Power",
+                    "description": "Residential properties connect to standard single-phase 240V utility lines, whereas commercial installations interface with high-voltage three-phase 480V grid connections."
+                  },
+                  {
+                    "title": "Permitting Timelines & Financial ROI",
+                    "description": "Home installations usually receive permits in weeks with a 5 to 7 year payback. Commercial projects require extensive utility impact studies and achieve rapid payback through accelerated MACRS tax depreciation."
+                  }
+                ],
+                "conclusion": {
+                  "tag": "CONCLUSION",
+                  "title_line1": "Select The Ideal",
+                  "title_highlight": "Solar Architecture",
+                  "description": "Understanding your energy profile helps you choose the right solar engineering solution, ensuring highest efficiency and optimal long-term financial returns.",
+                  "image": "/blogs/conclusion-solar.webp"
+                },
+                "sidebar": {
+                  "recent_title": "RECENT BLOGS",
+                  "recent_blogs": [
+                    {
+                      "id": "01",
+                      "slug": "5-key-benefits-of-installing-solar-panels-at-home",
+                      "title": "5 Key Benefits of Installing Solar Panels at Home",
+                      "date": "AUG 28, 2024",
+                      "image": "/blogs/blog1.webp"
+                    },
+                    {
+                      "id": "02",
+                      "slug": "how-solar-energy-helps-build-a-sustainable-future",
+                      "title": "How Solar Energy Helps Build a Sustainable Future",
+                      "date": "AUG 15, 2024",
+                      "image": "/blogs/blog2.webp"
+                    },
+                    {
+                      "id": "03",
+                      "slug": "tips-to-maintain-your-solar-system-for-longer-life",
+                      "title": "Tips to Maintain Your Solar System for Longer Life",
+                      "date": "AUG 08, 2024",
+                      "image": "/blogs/b2.webp"
+                    },
+                    {
+                      "id": "04",
+                      "slug": "residential-vs-commercial-solar-what-is-the-difference",
+                      "title": "Residential vs Commercial Solar: What's the Difference?",
+                      "date": "JUL 28, 2024",
+                      "image": "/blogs/b3.webp"
+                    }
+                  ],
+                  "cta": {
+                    "tag": "HAVE QUESTIONS?",
+                    "title_line1": "Get in Touch",
+                    "title_highlight": "with Our Experts",
+                    "description": "We're here to help you find the right solar solution for your home.",
+                    "button_text": "CONTACT US",
+                    "button_link": "/contact"
+                  }
+                }
+              }
+            ]
           }
         }
       }

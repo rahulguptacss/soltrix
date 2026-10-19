@@ -15,7 +15,7 @@
 }
 
 html {
-  /* Scroll behavior managed cleanly with GSAP ScrollTrigger without CSS interference */
+  scroll-behavior: auto; /* Managed with GSAP ScrollTrigger */
 }
 
 body {

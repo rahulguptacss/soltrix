@@ -16,7 +16,7 @@ export default function BlogPage() {
       <Header data={common.Header} />
       <main className="w-full flex-1">
         <Breadcrumb data={pages.blog.breadcrumb!} />
-        <Blogs data={sections.blogs} />
+        <Blogs data={sections.blogs} layout="grid" />
       </main>
       <Footer data={common.Footer} />
       <BackToTop />
