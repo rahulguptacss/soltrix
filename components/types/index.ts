@@ -1,10 +1,13 @@
 import data from '../data/data.json';
 
-export interface LinkType {
+export interface NavItem {
   name: string;
   href: string;
   active?: boolean;
+  children?: NavItem[];
 }
+
+export type LinkType = NavItem;
 
 export interface HeaderData {
   logo: string;
