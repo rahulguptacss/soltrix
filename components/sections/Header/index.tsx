@@ -44,9 +44,9 @@ function DesktopNavItem({
       >
         <Link
           href={link.href}
-          className={`text-[13.5px] font-medium transition-colors ${
+          className={`text-[15.5px] lg:text-[16px] font-semibold transition-colors ${
             active
-              ? 'text-[#f59e0b] font-semibold'
+              ? 'text-[#f59e0b]'
               : 'text-white/90 hover:text-[#f59e0b]'
           }`}
         >
@@ -79,14 +79,14 @@ function DesktopNavItem({
     >
       <Link
         href={link.href}
-        className={`inline-flex items-center gap-1.5 text-[13.5px] font-medium transition-colors ${
+        className={`inline-flex items-center gap-1.5 text-[15.5px] lg:text-[16px] font-semibold transition-colors ${
           active
-            ? 'text-[#f59e0b] font-semibold'
+            ? 'text-[#f59e0b]'
             : 'text-white/90 hover:text-[#f59e0b]'
         }`}
       >
         <span>{link.name}</span>
-        <ChevronDown className="h-3 w-3 opacity-70 transition-transform duration-200 group-hover/nav:rotate-180 group-hover/nav:text-[#f59e0b]" />
+        <ChevronDown className="h-3.5 w-3.5 opacity-75 transition-transform duration-200 group-hover/nav:rotate-180 group-hover/nav:text-[#f59e0b]" />
       </Link>
 
       {active && (
@@ -95,8 +95,8 @@ function DesktopNavItem({
 
       {/* Level 1 Floating Dropdown Card */}
       <div className="pointer-events-none absolute left-0 top-full pt-3 opacity-0 translate-y-2 transition-all duration-200 group-hover/nav:pointer-events-auto group-hover/nav:opacity-100 group-hover/nav:translate-y-0 focus-within:pointer-events-auto focus-within:opacity-100 focus-within:translate-y-0 z-50">
-        <div className="min-w-[220px] rounded-xl border border-white/10 bg-[#1e2327]/98 backdrop-blur-xl p-2 shadow-[0_20px_40px_-10px_rgba(0,0,0,0.6)]">
-          <ul className="space-y-0.5">
+        <div className="min-w-[240px] rounded-xl border border-white/10 bg-[#1e2327]/98 backdrop-blur-xl p-2.5 shadow-[0_20px_40px_-10px_rgba(0,0,0,0.6)]">
+          <ul className="space-y-1">
             {link.children?.map((sub) => {
               const hasSubChildren = Boolean(sub.children && sub.children.length > 0);
               const isSubActive = isActive(sub.href);
@@ -106,10 +106,10 @@ function DesktopNavItem({
                   <li key={sub.name}>
                     <Link
                       href={sub.href}
-                      className={`block rounded-lg px-3.5 py-2 text-[13px] font-medium transition-colors ${
+                      className={`block rounded-lg px-4 py-2.5 text-[14.5px] sm:text-[15px] font-medium transition-colors ${
                         isSubActive
                           ? 'bg-[#f59e0b]/15 text-[#f59e0b]'
-                          : 'text-white/80 hover:bg-white/5 hover:text-[#f59e0b]'
+                          : 'text-white/85 hover:bg-white/5 hover:text-[#f59e0b]'
                       }`}
                     >
                       {sub.name}
@@ -123,28 +123,28 @@ function DesktopNavItem({
                 <li key={sub.name} className="group/sub relative">
                   <Link
                     href={sub.href}
-                    className={`flex items-center justify-between rounded-lg px-3.5 py-2 text-[13px] font-medium transition-colors ${
+                    className={`flex items-center justify-between rounded-lg px-4 py-2.5 text-[14.5px] sm:text-[15px] font-medium transition-colors ${
                       isSubActive
                         ? 'bg-[#f59e0b]/15 text-[#f59e0b]'
-                        : 'text-white/80 hover:bg-white/5 hover:text-[#f59e0b]'
+                        : 'text-white/85 hover:bg-white/5 hover:text-[#f59e0b]'
                     }`}
                   >
                     <span>{sub.name}</span>
-                    <ChevronRight className="h-3 w-3 opacity-60 transition-transform duration-200 group-hover/sub:translate-x-0.5 group-hover/sub:text-[#f59e0b]" />
+                    <ChevronRight className="h-3.5 w-3.5 opacity-70 transition-transform duration-200 group-hover/sub:translate-x-0.5 group-hover/sub:text-[#f59e0b]" />
                   </Link>
 
                   {/* Level 2 Sub-Dropdown Card */}
                   <div className="pointer-events-none absolute left-full top-0 pl-2 opacity-0 translate-x-2 transition-all duration-200 group-hover/sub:pointer-events-auto group-hover/sub:opacity-100 group-hover/sub:translate-x-0 focus-within:pointer-events-auto focus-within:opacity-100 focus-within:translate-x-0 z-50">
-                    <div className="min-w-[200px] rounded-xl border border-white/10 bg-[#1e2327]/98 backdrop-blur-xl p-2 shadow-[0_20px_40px_-10px_rgba(0,0,0,0.6)]">
-                      <ul className="space-y-0.5">
+                    <div className="min-w-[220px] rounded-xl border border-white/10 bg-[#1e2327]/98 backdrop-blur-xl p-2.5 shadow-[0_20px_40px_-10px_rgba(0,0,0,0.6)]">
+                      <ul className="space-y-1">
                         {sub.children?.map((nested) => (
                           <li key={nested.name}>
                             <Link
                               href={nested.href}
-                              className={`block rounded-lg px-3.5 py-1.5 text-[12.5px] font-medium transition-colors ${
+                              className={`block rounded-lg px-4 py-2 text-[13.5px] sm:text-[14px] font-medium transition-colors ${
                                 isActive(nested.href)
                                   ? 'bg-[#f59e0b]/15 text-[#f59e0b]'
-                                  : 'text-white/70 hover:bg-white/5 hover:text-[#f59e0b]'
+                                  : 'text-white/75 hover:bg-white/5 hover:text-[#f59e0b]'
                               }`}
                             >
                               {nested.name}
@@ -189,15 +189,15 @@ function MobileNavItem({
       <Link
         href={link.href}
         onClick={onClose}
-        className={`flex items-center justify-between rounded-lg px-4 py-2.5 text-[15px] font-medium transition ${
+        className={`flex items-center justify-between rounded-lg px-4 py-3 text-[16.5px] font-medium transition ${
           active
             ? 'bg-white/10 text-[#f59e0b] font-semibold'
-            : 'text-white/80 hover:bg-white/5 hover:text-white'
+            : 'text-white/85 hover:bg-white/5 hover:text-white'
         }`}
       >
         <span>{link.name}</span>
         {active && (
-          <span className="h-1.5 w-1.5 rounded-full bg-[#f59e0b]" />
+          <span className="h-2 w-2 rounded-full bg-[#f59e0b]" />
         )}
       </Link>
     );
@@ -205,7 +205,7 @@ function MobileNavItem({
 
   return (
     <div className="flex flex-col">
-      <div className="flex items-center justify-between rounded-lg px-4 py-1 text-[15px] font-medium transition hover:bg-white/5">
+      <div className="flex items-center justify-between rounded-lg px-4 py-1.5 text-[16.5px] font-medium transition hover:bg-white/5">
         <Link
           href={link.href}
           onClick={(e) => {
@@ -217,7 +217,7 @@ function MobileNavItem({
             }
           }}
           className={`flex-1 py-1.5 transition ${
-            active || expanded ? 'text-[#f59e0b] font-semibold' : 'text-white/80 hover:text-white'
+            active || expanded ? 'text-[#f59e0b] font-semibold' : 'text-white/85 hover:text-white'
           }`}
         >
           {link.name}
@@ -261,10 +261,10 @@ function MobileNavItem({
                     <Link
                       href={sub.href}
                       onClick={onClose}
-                      className={`block rounded-md px-3 py-1.5 text-[14px] font-medium transition ${
+                      className={`block rounded-md px-3.5 py-2 text-[15px] font-medium transition ${
                         isSubActive
                           ? 'text-[#f59e0b]'
-                          : 'text-white/75 hover:bg-white/5 hover:text-white'
+                          : 'text-white/80 hover:bg-white/5 hover:text-white'
                       }`}
                     >
                       {sub.name}
@@ -276,7 +276,7 @@ function MobileNavItem({
               // Level 2 inside mobile drawer (Dropdown inside dropdown)
               return (
                 <li key={sub.name} className="flex flex-col">
-                  <div className="flex items-center justify-between rounded-md px-3 py-1 text-[14px] font-medium">
+                  <div className="flex items-center justify-between rounded-md px-3.5 py-1.5 text-[15px] font-medium">
                     <Link
                       href={sub.href}
                       onClick={(e) => {
@@ -288,7 +288,7 @@ function MobileNavItem({
                         }
                       }}
                       className={`flex-1 transition ${
-                        isSubActive || isSubOpen ? 'text-[#f59e0b]' : 'text-white/75 hover:text-white'
+                        isSubActive || isSubOpen ? 'text-[#f59e0b]' : 'text-white/80 hover:text-white'
                       }`}
                     >
                       {sub.name}
@@ -326,10 +326,10 @@ function MobileNavItem({
                             <Link
                               href={nested.href}
                               onClick={onClose}
-                              className={`block rounded-md px-2.5 py-1 text-[13px] font-medium transition ${
+                              className={`block rounded-md px-3 py-1.5 text-[14px] font-medium transition ${
                                 isActive(nested.href)
                                   ? 'text-[#f59e0b]'
-                                  : 'text-white/65 hover:text-white'
+                                  : 'text-white/70 hover:text-white'
                               }`}
                             >
                               {nested.name}
@@ -406,18 +406,18 @@ export default function Header({ data }: { data: HeaderData }) {
     <header
       className={`sticky top-0 z-50 w-full bg-white transition-all duration-300 ${
         isScrolled
-          ? 'bg-white/95 backdrop-blur-md shadow-[0_4px_24px_rgba(0,0,0,0.06)] border-b border-gray-100 py-1'
-          : 'border-b border-transparent py-1 sm:py-1.5'
+          ? 'bg-white/95 backdrop-blur-md shadow-[0_4px_24px_rgba(0,0,0,0.06)] border-b border-gray-100 py-0.5 sm:py-1'
+          : 'border-b border-transparent py-0.5 sm:py-1.5'
       }`}
     >
-      <div className="mx-auto flex h-[62px] sm:h-[66px] max-w-[1360px] items-center justify-between px-4 sm:px-6 lg:px-8">
+      <div className="mx-auto flex h-[74px] sm:h-[82px] lg:h-[90px] max-w-[1400px] items-center justify-between px-4 sm:px-6 lg:px-8">
         
         {/* Logo */}
-        <Link href="/" className="flex items-center gap-3 shrink-0">
+        <Link href="/" className="flex items-center shrink-0">
           <img
             src={data.logo}
             alt={data.logo_text}
-            className="h-11 sm:h-13 lg:h-[54px] w-auto max-w-[280px] object-contain transition-transform duration-300 hover:scale-102"
+            className="h-[62px] sm:h-16 lg:h-[68px] xl:h-[76px] w-auto max-w-[260px] sm:max-w-[380px] lg:max-w-[420px] object-contain transition-transform duration-300 hover:scale-[1.02]"
           />
         </Link>
 
@@ -425,7 +425,7 @@ export default function Header({ data }: { data: HeaderData }) {
         <nav
           onMouseEnter={() => setIsHovered(true)}
           onMouseLeave={() => setIsHovered(false)}
-          className={`relative hidden items-center rounded-[11px] bg-[#22272b] p-1 shadow-sm lg:flex transition-all duration-300 ${
+          className={`relative hidden items-center rounded-[14px] bg-[#22272b] p-1.5 shadow-sm lg:flex transition-all duration-300 ${
             shouldCollapse ? 'overflow-hidden' : 'overflow-visible'
           }`}
         >
@@ -442,7 +442,7 @@ export default function Header({ data }: { data: HeaderData }) {
             }}
             className={`${shouldCollapse ? 'overflow-hidden' : 'overflow-visible'} flex items-center`}
           >
-            <ul className="flex items-center gap-4 sm:gap-5 pl-4 pr-3 whitespace-nowrap">
+            <ul className="flex items-center gap-5 sm:gap-6 pl-5 pr-4 whitespace-nowrap">
               {data.links.map((link, idx) => (
                 <DesktopNavItem
                   key={link.name + link.href}
@@ -457,14 +457,14 @@ export default function Header({ data }: { data: HeaderData }) {
             </ul>
           </motion.div>
 
-          {/* Get a Quote Button - Compact & Sleek */}
+          {/* Get a Quote Button - Scaled & Sleek */}
           <Link
             href={data.button_link}
-            className="shrink-0 flex items-center gap-1.5 rounded-[8px] bg-[#f59e0b] px-4 py-2 text-[13px] font-bold text-[#1f2427] whitespace-nowrap shadow-xs transition-all duration-200 hover:bg-[#e0961b] active:scale-95"
+            className="shrink-0 flex items-center gap-2 rounded-[9px] bg-[#f59e0b] px-5 py-2.5 text-[14.5px] lg:text-[15px] font-bold text-[#1f2427] whitespace-nowrap shadow-xs transition-all duration-200 hover:bg-[#e0961b] active:scale-95"
           >
             <span>{data.button_text}</span>
             <svg
-              className="h-3.5 w-3.5 stroke-[2.2] transition-transform duration-200 group-hover:translate-x-0.5"
+              className="h-4 w-4 stroke-[2.2] transition-transform duration-200 group-hover:translate-x-0.5"
               fill="none"
               viewBox="0 0 24 24"
               stroke="currentColor"
@@ -481,7 +481,7 @@ export default function Header({ data }: { data: HeaderData }) {
         {/* Mobile Menu Button */}
         <button
           type="button"
-          className="flex h-11 w-11 items-center justify-center rounded-[10px] border border-gray-200 bg-[#22272b] text-white shadow-sm transition hover:bg-[#181d20] lg:hidden cursor-pointer"
+          className="flex h-12 w-12 items-center justify-center rounded-[11px] border border-gray-200 bg-[#22272b] text-white shadow-sm transition hover:bg-[#181d20] lg:hidden cursor-pointer"
           onClick={() => setOpen((prev) => !prev)}
           aria-label="Toggle menu"
         >
@@ -514,7 +514,7 @@ export default function Header({ data }: { data: HeaderData }) {
                   <Link
                     href={data.button_link}
                     onClick={() => setOpen(false)}
-                    className="flex w-full items-center justify-center gap-2 rounded-[10px] bg-[#f5a623] py-2.5 text-center text-[15px] font-bold text-[#1f2427] transition hover:bg-[#e0961b] active:scale-95"
+                    className="flex w-full items-center justify-center gap-2 rounded-[10px] bg-[#f5a623] py-3 text-center text-[16px] font-bold text-[#1f2427] transition hover:bg-[#e0961b] active:scale-95"
                   >
                     <span>{data.button_text}</span>
                     <svg

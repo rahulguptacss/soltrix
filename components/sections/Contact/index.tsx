@@ -171,47 +171,35 @@ export default function Contact({ data }: { data: ContactSectionData }) {
       
       {/* ==================================================== */}
       {/* 1. HERO / HEADING SECTION                            */}
-      {/* Matches exact screenshot: 2-line title & description  */}
+      {/* Centered Heading (Right text removed as requested)  */}
       {/* ==================================================== */}
       <section className="pt-10 sm:pt-14 lg:pt-16 pb-6 sm:pb-8">
         <div className="mx-auto max-w-[1360px] px-4 sm:px-6 lg:px-8">
-          <div className="flex flex-col lg:flex-row lg:items-end justify-between gap-6 lg:gap-12">
+          <div className="flex flex-col items-center text-center">
             
-            {/* Left: Eyebrow + 2-Line Title */}
+            {/* Centered: Eyebrow + 2-Line Title */}
             <motion.div
-              initial={{ opacity: 0, x: -20 }}
-              animate={{ opacity: 1, x: 0 }}
+              initial={{ opacity: 0, y: -16 }}
+              animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.55, ease: 'easeOut' }}
-              className="max-w-[620px]"
+              className="max-w-[760px] mx-auto flex flex-col items-center"
             >
               {/* Eyebrow */}
-              <div className="flex items-center gap-2.5 mb-2 sm:mb-2.5">
+              <div className="flex items-center justify-center gap-2.5 mb-2.5 sm:mb-3">
                 <span className="h-[2.5px] w-8 bg-[#f5a623] shrink-0" />
                 <span className="text-[11.5px] sm:text-[12px] font-bold uppercase tracking-[0.18em] text-[#64748b]">
-                  {data.eyebrow || data.subtitle || 'CONTACT US'}
+                  {data.eyebrow || data.subtitle || 'GET IN TOUCH'}
                 </span>
               </div>
 
-              {/* Title: Exactly 2 lines at all viewports */}
-              <h1 className="text-[34px] sm:text-[44px] md:text-[48px] lg:text-[52px] font-black leading-[1.05] tracking-tight text-[#0c1f17]">
-                <span className="block">{data.title_line1 || 'Get in Touch'}</span>
-                <span className="block">
+              {/* Title: Exactly 2 lines, centered */}
+              <h1 className="text-[34px] sm:text-[44px] md:text-[48px] lg:text-[52px] font-black leading-[1.08] tracking-tight text-[#0c1f17] text-center">
+                <span className="block">{data.title_line1 || 'Request A Free'}</span>
+                <span className="block mt-1 sm:mt-1.5">
                   <span>{data.title_with || 'with'} </span>
-                  <span className="text-[#f5a623]">{data.title_highlight || 'Soltrix'}</span>
+                  <span className="text-[#f5a623]">{data.title_highlight || 'Solar Consultation'}</span>
                 </span>
               </h1>
-            </motion.div>
-
-            {/* Right: Intro Description (Clean 3-line wrap on desktop) */}
-            <motion.div
-              initial={{ opacity: 0, y: 16 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.55, delay: 0.1, ease: 'easeOut' }}
-              className="w-full lg:max-w-[430px] xl:max-w-[450px] lg:pb-1"
-            >
-              <p className="text-[14px] sm:text-[14.5px] lg:text-[15px] leading-[1.58] text-[#556961] font-normal">
-                {data.description}
-              </p>
             </motion.div>
 
           </div>

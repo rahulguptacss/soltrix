@@ -40,7 +40,7 @@ export default function Services({ data }: { data: ServicesSectionData }) {
           scrollTrigger: {
             trigger: panel,
             start: 'bottom bottom',
-            end: () => (difference > 0 ? `+=${difference + 100}` : `+=${window.innerHeight * 1.05}`),
+            end: () => (difference > 0 ? `+=${difference}` : `+=${window.innerHeight}`),
             pin: true,
             pinSpacing: false,
             scrub: 1, // Ultra-smooth inertia interpolation
@@ -122,6 +122,7 @@ export default function Services({ data }: { data: ServicesSectionData }) {
       <div ref={panelsContainerRef} className="relative w-full">
         {data.items.map((item, index) => {
           const isEven = index % 2 === 1; // 0: Left image, 1: Right image, 2: Left image, 3: Right image
+          const isLast = index === data.items.length - 1;
 
           return (
             <div
